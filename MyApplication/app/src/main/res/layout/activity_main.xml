@@ -19,7 +19,7 @@
     <CalendarView
         android:id="@+id/calendarView"
         android:layout_width="match_parent"
-        android:layout_height="478dp"
+        android:layout_height="307dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="13dp" />
@@ -33,5 +33,28 @@
         android:layout_marginStart="6dp"
         android:layout_marginBottom="9dp"
         android:text="업데이트 시간, 날짜" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:text="날짜: " />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="322dp"
+        android:text="오늘 휴관일 장소:" />
 
 </RelativeLayout>
