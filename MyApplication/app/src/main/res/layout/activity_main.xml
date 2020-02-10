@@ -24,4 +24,14 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="13dp" />
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="9dp"
+        android:text="업데이트 시간, 날짜" />
+
 </RelativeLayout>

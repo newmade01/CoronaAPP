@@ -15,15 +15,17 @@
 
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="655dp"
-        android:layout_marginEnd="29dp"
-        android:layout_marginRight="29dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="679dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="4dp"
         android:text="뒤로" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="51dp"
+        android:layout_height="43dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
@@ -32,19 +34,8 @@
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
         android:text="장소를 선택하세요."
+        android:textSize="36sp"
         android:visibility="visible" />
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="67dp"
-        android:layout_marginLeft="67dp"
-        android:layout_marginTop="145dp"
-        android:text="백화점" />
 
     <CheckBox
         android:id="@+id/checkBox2"
@@ -53,9 +44,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="69dp"
-        android:layout_marginLeft="69dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="246dp"
         android:text="도서관" />
 
     <CheckBox
@@ -65,9 +56,33 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="69dp"
-        android:layout_marginLeft="69dp"
-        android:layout_marginTop="238dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="298dp"
         android:text="학교" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="196dp"
+        android:text="백화점" />
+
+    <SearchView
+        android:layout_width="317dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="112dp" />
 
 </RelativeLayout>
