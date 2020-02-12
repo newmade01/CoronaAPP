@@ -28,5 +28,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, SecondActivity.class));
             }
         });
+
+        Button btnNavToManager = findViewById(R.id.btnGoToManagerScreen);
+        btnNavToManager.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ManagerActivity.class));
+            }
+        });
     }
 }
