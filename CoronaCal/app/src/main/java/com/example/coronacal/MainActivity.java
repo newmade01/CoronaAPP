@@ -13,8 +13,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    // test
-    // 테스트2
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,11 +27,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button btnNavToManager = findViewById(R.id.btnGoToManagerScreen);
+        Button btnNavToManager = findViewById(R.id.btnGoToLockScreen);
         btnNavToManager.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, ManagerActivity.class));
+                startActivity(new Intent(MainActivity.this, LockActivity.class));
             }
         });
     }
