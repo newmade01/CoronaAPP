@@ -1,83 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
 
+   /* <TextView
+        android:id="@+id/txtsearch"
+        android:layout_width="247dp"
+        android:layout_height="31dp"
+        android:text="검색값 : "
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnGoToFirstScreen"
+    <TextView
+        android:id="@+id/txtresult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:text="검색결과"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        android:text="뒤로"
-        tools:layout_conversion_absoluteHeight="48dp"
-        tools:layout_conversion_absoluteWidth="88dp"
-        tools:layout_editor_absoluteX="306dp"
-        tools:layout_editor_absoluteY="679dp" />
+    <TextView
+        android:id="@+id/txtstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="76dp"
+        android:text="버튼 입력값 : 축소됨"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnexpand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="76dp"
+        android:onClick="mOnClick"
+        android:text="확장"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btncollapse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="76dp"
+        android:onClick="mOnClick"
+        android:text="축소"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="208dp"
+        android:text="백화점"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="232dp"
+        android:text="대학교"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="184dp"
+        android:text="도서관"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="장소를 선택하세요."
+        android:background="#00CC0D0D"
+        android:text="customListView로 데이터저장"
+        android:textColor="#E91E63"
         android:textSize="36sp"
-        android:visibility="visible"
-        tools:layout_conversion_absoluteHeight="43dp"
-        tools:layout_conversion_absoluteWidth="411dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="54dp" />
+        app:layout_constrainedHeight="false"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="623dp" />
 
-    <Switch
-        android:id="@+id/switch3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="도서관"
-        tools:layout_conversion_absoluteHeight="27dp"
-        tools:layout_conversion_absoluteWidth="78dp"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="390dp" />
 
-    <Switch
-        android:id="@+id/switch2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="대학교"
-        tools:layout_conversion_absoluteHeight="27dp"
-        tools:layout_conversion_absoluteWidth="78dp"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="390dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="백화점"
-        tools:layout_conversion_absoluteHeight="27dp"
-        tools:layout_conversion_absoluteWidth="78dp"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="390dp" />
-
-    <SearchView
-        android:id="@+id/searchForm"
-        android:layout_width="306dp"
-        android:layout_height="40dp"
-        tools:layout_conversion_absoluteHeight="60dp"
-        tools:layout_conversion_absoluteWidth="317dp"
-        tools:layout_editor_absoluteX="13dp"
-        tools:layout_editor_absoluteY="112dp" />
-
-    <Button
-        android:id="@+id/submitButton"
-        android:layout_width="321dp"
-        android:layout_height="68dp"
-        android:gravity="right"
-        android:text="제출하기"
-        tools:layout_conversion_absoluteHeight="48dp"
-        tools:layout_conversion_absoluteWidth="351dp"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="184dp" />
-
-</RelativeLayout>

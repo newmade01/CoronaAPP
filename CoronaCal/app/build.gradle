@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 29
@@ -27,4 +29,16 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation files('libs/jsoup-1.12.2.jar')
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'com.kyleduo.switchbutton:library:2.0.0'
+    //implementation 'com.github.andremion:floatingnavigationview:1.1.1'
+    implementation 'com.prolificinteractive:material-calendarview:1.4.3'
+
+    implementation 'com.github.tizisdeepan:eventscalendar:1.0.0'
+    compile "androidx.core:core-ktx:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+}
+repositories {
+    mavenCentral()
 }
