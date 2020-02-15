@@ -12,7 +12,7 @@
         android:layout_marginStart="156dp"
         android:layout_marginLeft="156dp"
         android:layout_marginTop="17dp"
-        android:text="관리자모드" />
+        android:text="관리자모드-웹크롤링자료" />
 
 
 
