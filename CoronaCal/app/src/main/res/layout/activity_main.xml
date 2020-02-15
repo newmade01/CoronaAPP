@@ -17,20 +17,8 @@
         android:text="장소를 선택하세요"
         tools:layout_editor_absoluteX="9dp"
         tools:layout_editor_absoluteY="415dp" /><![CDATA[
-
-
-
-
-
     tools:layout_editor_absoluteX="16dp"
     tools:layout_editor_absoluteY="711dp" />
-
-
-
-
-
-
-
     ]]>
 
     <CalendarView

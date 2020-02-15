@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 //크롤링 샘플코드
-                new Thread() {
+              new Thread() {
                     public void run() {
                         System.out.println("크롤링 시작");
                         Crawling cw = new Crawling();
