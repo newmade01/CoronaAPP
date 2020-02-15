@@ -5,9 +5,10 @@
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
-    <TextView
+   /* <TextView
         android:id="@+id/txtsearch"
         android:layout_width="247dp"
         android:layout_height="31dp"
@@ -90,6 +91,18 @@
         android:text="도서관"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00CC0D0D"
+        android:text="customListView로 데이터저장"
+        android:textColor="#E91E63"
+        android:textSize="36sp"
+        app:layout_constrainedHeight="false"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="623dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

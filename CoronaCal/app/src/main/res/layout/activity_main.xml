@@ -2,68 +2,79 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/btnGoToSecondScreen"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="406dp"
+        android:layout_height="47dp"
 
 
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="121dp"
+        android:layout_alignBottom="@id/calendarView"
         android:text="장소를 선택하세요"
-        android:layout_alignParentLeft="true" />
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="415dp" /><![CDATA[
+
+
+
+
+
+    tools:layout_editor_absoluteX="16dp"
+    tools:layout_editor_absoluteY="711dp" />
+
+
+
+
+
+
+
+    ]]>
 
     <CalendarView
         android:id="@+id/calendarView"
-        android:layout_width="wrap_content"
-        android:layout_height="348dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="110dp"
-        android:layout_marginEnd="1dp" />
+        android:layout_width="410dp"
+        android:layout_height="335dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="77dp" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="31dp"
-        android:text="업데이트 시간, 날짜" />
+        android:layout_alignBottom="@id/textView6"
+        android:layout_marginBottom="-91dp"
+        android:text="업데이트 시간, 날짜"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="595dp" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="114dp"
-        android:layout_marginLeft="114dp"
-        android:layout_marginBottom="208dp"
-        android:text="오늘날짜, 오늘의 휴관일 장소나열:" />
+        android:layout_alignBottom="@id/calendarView"
+        android:layout_marginBottom="-85dp"
+        android:text="오늘날짜, 오늘의 휴관일 장소정보불러오기:"
+        android:textColor="#E91E63"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="459dp" />
 
     <Button
         android:id="@+id/btnGoToLockScreen"
         android:layout_width="match_parent"
-        android:layout_height="43dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="7dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginBottom="681dp"
-        android:text="로그인(Lock)->관리자 모드로 들어가기" />
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="16dp"
+        android:text="로그인(Lock)->관리자 모드로 들어가기"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="62dp" />
+
+    tools:layout_editor_absoluteX="121dp"
+    tools:layout_editor_absoluteY="16dp" />
 
 </RelativeLayout>
