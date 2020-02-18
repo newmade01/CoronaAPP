@@ -34,6 +34,9 @@ dependencies {
     //implementation 'com.github.andremion:floatingnavigationview:1.1.1'
     implementation 'com.prolificinteractive:material-calendarview:1.4.3'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+
 
 }
 repositories {
