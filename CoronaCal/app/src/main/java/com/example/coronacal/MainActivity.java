@@ -26,18 +26,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        Button btnNavTohorizontal = findViewById(R.id.btnGoTohorizontal);
-        btnNavTohorizontal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, DBView.class));
-                if( tryConnect(true) ){ insertTest(); }
-
-            }
-        });
-
-
         Button btnNavToSecond = findViewById(R.id.btnGoToSecondScreen);
         btnNavToSecond.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
                         System.out.println("결과: "+result);
                     }
                 }.start();
+              // 연결 및 insert 테스트
+                if( tryConnect(true) ){ insertTest(); }
 
                 startActivity(new Intent(MainActivity.this, LockActivity.class));
          }
