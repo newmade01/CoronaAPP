@@ -25,6 +25,8 @@
 
 
 
+
+
     ]]>
 
     <CalendarView
@@ -70,12 +72,6 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="62dp" />
 
-    <Button
-        android:id="@+id/btnGoTohorizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="DB정보 불러오기"
-        app:layout_constraintTop_toTopOf="@id/btnGoToLockScreen" />
 
     tools:layout_editor_absoluteX="121dp"
     tools:layout_editor_absoluteY="16dp" />
