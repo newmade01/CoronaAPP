@@ -32,6 +32,8 @@
         <activity android:name=".MapActivity"/>
         <activity android:name=".ManagerActivity"/>
         <activity android:name=".LockActivity"/>
+        <activity android:name=".Example"/>
+        <activity android:name=".ConnectionClass"/>
 
 
 

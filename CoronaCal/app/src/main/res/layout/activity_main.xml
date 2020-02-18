@@ -29,12 +29,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
     ]]>
 
     <CalendarView
         android:id="@+id/calendarView"
-        android:layout_width="410dp"
-        android:layout_height="335dp"
+        android:layout_width="match_parent"
+        android:layout_height="427dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="false"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="@id/btnGoToSecondScreen"
         app:layout_constraintHorizontal_bias="0.262"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,10 +79,12 @@
         android:id="@+id/btnGoToLockScreen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@id/calendarView"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="false"
         android:layout_marginTop="16dp"
-        android:layout_marginRight="1dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="-61dp"
         android:text="로그인(Lock)->관리자 모드로 들어가기"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="62dp" />
@@ -79,7 +94,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@id/textView3"
-        android:layout_marginBottom="-215dp"
+        android:layout_marginBottom="-114dp"
         android:background="#9C27B0"
         android:text="임시버튼(로구인창)" />
 
