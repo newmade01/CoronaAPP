@@ -19,20 +19,22 @@
         tools:layout_editor_absoluteY="415dp" /><![CDATA[
     tools:layout_editor_absoluteX="16dp"
     tools:layout_editor_absoluteY="711dp" />
+
+
+
+
+
+
     ]]>
 
     <CalendarView
         android:id="@+id/calendarView"
         android:layout_width="410dp"
         android:layout_height="335dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/btnGoToSecondScreen"
         app:layout_constraintHorizontal_bias="0.262"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="77dp" />
-
-
-
-
 
     <TextView
         android:id="@+id/textView3"
@@ -58,10 +60,12 @@
 
     <Button
         android:id="@+id/btnGoToLockScreen"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
         android:layout_centerVertical="false"
         android:layout_marginTop="16dp"
+        android:layout_marginRight="1dp"
         android:text="로그인(Lock)->관리자 모드로 들어가기"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="62dp" />
@@ -70,7 +74,8 @@
         android:id="@+id/btnGoTohorizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="DB정보 불러오기" />
+        android:text="DB정보 불러오기"
+        app:layout_constraintTop_toTopOf="@id/btnGoToLockScreen" />
 
     tools:layout_editor_absoluteX="121dp"
     tools:layout_editor_absoluteY="16dp" />
