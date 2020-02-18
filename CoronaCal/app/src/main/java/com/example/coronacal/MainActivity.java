@@ -19,6 +19,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        Button btnNavTohorizontal = findViewById(R.id.btnGoTohorizontal);
+        btnNavTohorizontal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, DBView.class));
+            }
+        });
+
+
         Button btnNavToSecond = findViewById(R.id.btnGoToSecondScreen);
         btnNavToSecond.setOnClickListener(new View.OnClickListener() {
             @Override
