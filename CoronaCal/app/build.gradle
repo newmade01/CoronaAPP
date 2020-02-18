@@ -34,11 +34,9 @@ dependencies {
     //implementation 'com.github.andremion:floatingnavigationview:1.1.1'
     implementation 'com.prolificinteractive:material-calendarview:1.4.3'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-
-  // implementation 'com.android.support:appcompat:23.1.1'
-
-
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    // implementation 'com.android.support:appcompat:23.1.1'
+    implementation files('libs/jtds-1.2.5.jar')
 }
 repositories {
     mavenCentral()

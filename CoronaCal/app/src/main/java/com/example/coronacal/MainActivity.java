@@ -18,8 +18,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
+        /*Button btnNavToEX = findViewById(R.id.btnGoToEX);
+        btnNavToEX.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, HomePage.class));
+            }
+        });
+*/
 
 
         Button btnNavToSecond = findViewById(R.id.btnGoToSecondScreen);

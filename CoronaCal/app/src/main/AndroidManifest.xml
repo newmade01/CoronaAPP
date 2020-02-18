@@ -32,6 +32,9 @@
         <activity android:name=".MapActivity"/>
         <activity android:name=".ManagerActivity"/>
         <activity android:name=".LockActivity"/>
+
+
+
     </application>
 
 

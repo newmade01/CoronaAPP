@@ -27,6 +27,8 @@
 
 
 
+
+
     ]]>
 
     <CalendarView
@@ -62,7 +64,7 @@
 
     <Button
         android:id="@+id/btnGoToLockScreen"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="false"
@@ -71,6 +73,15 @@
         android:text="로그인(Lock)->관리자 모드로 들어가기"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="62dp" />
+
+    <Button
+        android:id="@+id/btnGoToEX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView3"
+        android:layout_marginBottom="-215dp"
+        android:background="#9C27B0"
+        android:text="임시버튼(로구인창)" />
 
 
     tools:layout_editor_absoluteX="121dp"
