@@ -34,9 +34,6 @@
         <activity android:name=".LockActivity"/>
         <activity android:name=".Example"/>
         <activity android:name=".ConnectionClass"/>
-        <activity android:name=".SignupPage"/>
-        <activity android:name=".MenuPage"/>
-
 
 
     </application>
