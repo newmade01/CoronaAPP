@@ -38,7 +38,7 @@ dependencies {
     // implementation 'com.android.support:appcompat:23.1.1'
     implementation files('libs/jtds-1.2.5.jar')
     implementation 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'//아파치 사용다운
-    implementation 'com.android.volley:volley:1.1.0'
+
 }
 repositories {
     mavenCentral()
