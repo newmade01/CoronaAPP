@@ -1,13 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
 
     <TextView
-        android:id="@+id/textView9"
+        android:text="ID"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_view"
+        android:layout_alignParentTop="true"
+
+         />
+
+    <TextView
+        android:text="PW"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pw_view"
+        android:layout_below="@+id/id_view"
+         />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/user_pw"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:hint="password" />
+
+    <Button
+        android:text="SIGN IN"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="테스트페이지"
-        android:textColor="#F44336"
-        android:textSize="36sp" />
-</LinearLayout>
+        android:id="@+id/btn_signin"
+        android:layout_below="@+id/user_pw"
+
+        android:layout_marginTop="18dp"/>
+
+    <Button
+        android:text="SIGN UP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_signup"
+        android:layout_below="@+id/btn_signin"
+        android:layout_centerHorizontal="true"
+        android:onClick="CliSignUp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/user_id"
+        android:layout_alignParentTop="true"
+
+        android:hint="email@input.com" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+
+        android:id="@+id/textView2"
+       />
+
+</RelativeLayout>
