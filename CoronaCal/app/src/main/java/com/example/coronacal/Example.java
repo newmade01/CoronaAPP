@@ -102,7 +102,7 @@ public class Example extends AppCompatActivity {
     void login() {
         try {
             httpclient = new DefaultHttpClient();
-            httppost = new HttpPost("http:// 192.168.0.27/login.php");
+            httppost = new HttpPost("http://C:/Apache24/htdocs/login.php");
             nameValuePairs = new ArrayList<NameValuePair>(2);
             nameValuePairs.add(new BasicNameValuePair("username", inputID.getText().toString()));
             nameValuePairs.add(new BasicNameValuePair("password", inputPW.getText().toString()));
