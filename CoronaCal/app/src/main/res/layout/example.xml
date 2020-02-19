@@ -55,14 +55,16 @@
         android:onClick="CliSignUp"/>
 
     <EditText
+        android:id="@+id/user_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:id="@+id/user_id"
+        android:layout_alignRight="@id/user_pw"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="-2dp"
 
-        android:hint="email@input.com" />
+        android:ems="10"
+        android:hint="email@input.com"
+        android:inputType="textEmailAddress" />
 
     <TextView
         android:text="TextView"

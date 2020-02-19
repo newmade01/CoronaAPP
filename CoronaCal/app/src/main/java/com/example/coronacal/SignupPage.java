@@ -54,7 +54,7 @@ public class SignupPage extends Activity {
                     String Id = (String) params[0];
                     String Pw = (String) params[1];
 
-                    String link = "http://C:\\AutoSet10\\public_html/post.php";
+                    String link = "http:// 192.168.0.27/post.php";
                     String data = URLEncoder.encode("Id", "UTF-8") + "=" + URLEncoder.encode(Id, "UTF-8");
                     data += "&" + URLEncoder.encode("Pw", "UTF-8") + "=" + URLEncoder.encode(Pw, "UTF-8");
 
@@ -87,3 +87,4 @@ public class SignupPage extends Activity {
         task.execute(Id, Pw);
     }
 }
+

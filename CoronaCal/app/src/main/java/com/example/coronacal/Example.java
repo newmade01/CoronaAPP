@@ -70,11 +70,11 @@ public class Example extends AppCompatActivity {
     List<NameValuePair> nameValuePairs;
     ProgressDialog dialog = null;
     TextView tv;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.example);
-
+        setContentView(R.layout.activity_main);
 
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
@@ -97,11 +97,8 @@ public class Example extends AppCompatActivity {
                 }).start();
             }
         });
-
-
-
-
     }
+
     void login() {
         try {
             httpclient = new DefaultHttpClient();
@@ -149,6 +146,7 @@ public class Example extends AppCompatActivity {
         startActivity(intent);
     }
 }
+
 
 
 
